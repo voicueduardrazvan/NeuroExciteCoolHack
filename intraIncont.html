@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+<script type="text/javascript">
+		function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("testCookie");
+          if (user!="")
+        	alert("Welcome Back " + user + "!!!");
+          else
+          {
+            user = prompt("Please enter your name");
+            num = prompt("How many days you want to store your name on your computer?");
+            if (user!="" && user!=null)
+            {
+            createCookie("testCookie", user, num);
+            }
+          }
+        }
+	</script>
+
+	
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Neuroexcite team</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="css/contNou.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header sticky"></header>
+
+    <main>
+      <h1>Intra in cont</h1>
+      <form name="frmContact" class="needs-validation "  method="post" action="login.php">
+		
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" /><br />
+
+        <label for="parola">Parola:</label><br />
+        <input type="text" id="parola" name="parola" /><br />
+
+        <input
+          type="submit"
+          id="CreeazaContNou"
+          id="login"
+          value="Intra in cont"
+        />
+      </form>
+    </main>
+
+    <footer class="footer">
+      <h2><a href="index.html">Inapoi la pagina principala </a></h2>
+    </footer>
+
+    <!-- <script src="js/app.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Neuroexcite team</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/contNou.css" rel="stylesheet" />
+    <!-- Load Styles -->
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+
+    <main>
+      <h1>Bun venit!</h1>
+      <h1>Te rugam sa completezi aceste informatii:</h1>
+		<form name="frmContact" class="needs-validation " method="post" action="add.php">
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" /><br />
+
+        <label for="parola">Parola</label><br />
+        <input type="text" id="parola" name="parola" /><br />
+
+        <label for="prenume">Prenume:</label><br />
+        <input type="text" id="prenume" name="prenume" /><br />
+
+        <label for="nume">Nume:</label><br />
+        <input type="text" id="nume" name="nume" /><br />
+
+        <label for="codpostal">Cod Postal:</label><br />
+        <input type="text" id="codpostal" name="codpostal" /><br />
+
+        <label for="serviciu">Tipul/Numele serviciului</label><br />
+        <input type="text" id="serviciu" name="serviciu" /><br />
+
+        <label for="tarif">Tariful pe ora</label><br />
+        <input type="text" id="tarif" name="tarif" /><br />
+
+        <label for="telefon">Nr telefon contact</label><br />
+        <input type="text" id="telefon" name="telefon" /><br />
+
+        <input type="submit" name="Submit" id="CreeazaContNou" value="Creeaza cont nou" />
+        <!-- <button type="submit">Creaaza cont nou</button> -->
+      </form>
+    </main>
+
+    <footer class="footer">
+      <h2><a href="index.html">Inapoi la pagina principala </a></h2>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
