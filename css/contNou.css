@@ -40,6 +40,7 @@ h1 {
 }
 h2 {
   font-family: 'robotob';
+  font-size: 16px;
 }
 @media (min-width: 599px) {
   .ContNou-Login {
@@ -55,10 +56,7 @@ h2 {
   img {
     object-fit: contain;
   }
-  h2 {
-    /* color: green; */
-    font-size: 18px;
-  }
+
   .social {
     margin-top: 5%;
     margin-right: 7%;
@@ -82,12 +80,13 @@ h2 {
     border-radius: 5px;
   }
 
-  #query {
+  input[type='text'] {
     margin-top: 10px;
     height: 45px;
     width: 300px;
     outline: none;
     border-style: none;
+    border-radius: 5px;
     /* border-style: solid; */
     /* border-color: lightgray; */
   }
@@ -95,16 +94,6 @@ h2 {
   /* img {
   width: 100%;
 } */
-}
-button {
-  margin-top: 10px;
-  height: 45px;
-  width: 60px;
-  outline: none;
-  border-style: none;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
 }
 input[type='text'] {
   margin-top: 10px;
@@ -119,17 +108,37 @@ input[type='text'] {
 #CreeazaContNou {
   margin-top: 10px;
   height: 45px;
-  width: 80px;
+  width: 300px;
   outline: none;
   border-style: none;
   border-radius: 5px;
   background-color: black;
   color: white;
 }
-#map {
+label {
+  font-family: roboto;
   margin-top: 2%;
-  /* width: 300px; */
 }
+/* input {
+  font-family: roboto;
+  margin-top: 2%;
+} */
+.form {
+  margin-top: 1%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+.footer {
+  margin-top: 4%;
+  text-align: right;
+  margin-right: 2%;
+}
+
 @media (max-width: 599px) {
   .ContNou-Login {
     display: flex;
@@ -147,6 +156,9 @@ input[type='text'] {
   }
   img {
     object-fit: contain;
+  }
+  h1 {
+    font-size: 22px;
   }
   h2 {
     /* color: green; */
@@ -185,8 +197,8 @@ input[type='text'] {
     /* border-style: solid; */
     /* border-color: lightgray; */
   }
-
-  /* img {
-    width: 100%;
-  } */
+}
+.contNouText {
+  margin-top: 5%;
+  font-size: 26px;
 }
